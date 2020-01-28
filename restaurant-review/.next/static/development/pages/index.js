@@ -15,12 +15,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Header_SearchLocation__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Header/SearchLocation */ "./components/Header/SearchLocation.js");
 /* harmony import */ var _Header_SearchButton__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Header/SearchButton */ "./components/Header/SearchButton.js");
 /* harmony import */ var _Header_AddRestraunt__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Header/AddRestraunt */ "./components/Header/AddRestraunt.js");
-/* harmony import */ var _Header_header_module_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Header/header.module.css */ "./components/Header/header.module.css");
-/* harmony import */ var _Header_header_module_css__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_Header_header_module_css__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _footer__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./footer */ "./components/footer.js");
+/* harmony import */ var _Header_header_module_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./Header/header.module.css */ "./components/Header/header.module.css");
+/* harmony import */ var _Header_header_module_css__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_Header_header_module_css__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_7__);
 var _jsxFileName = "/Users/Kassidy/Desktop/sei/projects/project3_frontend/restaurant-review/components/Header.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
 
 
 
@@ -59,14 +61,14 @@ function Header() {
     id: "home",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 29
+      lineNumber: 28
     },
     __self: this
-  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_6___default.a, {
+  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_7___default.a, {
     href: "/",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 30
+      lineNumber: 29
     },
     __self: this
   }, __jsx("img", {
@@ -74,7 +76,7 @@ function Header() {
     alt: "yelp",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 30
+      lineNumber: 29
     },
     __self: this
   })), __jsx(_Header_SearchButton__WEBPACK_IMPORTED_MODULE_3__["default"], {
@@ -82,27 +84,35 @@ function Header() {
     location: location.location,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31
+      lineNumber: 30
     },
     __self: this
   }), __jsx(_Header_SearchLocation__WEBPACK_IMPORTED_MODULE_2__["default"], {
     newLocation: newLocation,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 35
+      lineNumber: 34
     },
     __self: this
   }), __jsx(_Header_SearchKey__WEBPACK_IMPORTED_MODULE_1__["default"], {
     newKeywords: newKeywords,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 38
+      lineNumber: 37
     },
     __self: this
   }), __jsx(_Header_AddRestraunt__WEBPACK_IMPORTED_MODULE_4__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41
+      lineNumber: 40
+    },
+    __self: this
+  }), __jsx(_footer__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    keywords: keywords.keywords,
+    location: location.location,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 42
     },
     __self: this
   }));
@@ -165,31 +175,36 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _header_module_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./header.module.css */ "./components/Header/header.module.css");
-/* harmony import */ var _header_module_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_header_module_css__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/router */ "./node_modules/next/dist/client/router.js");
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _header_module_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./header.module.css */ "./components/Header/header.module.css");
+/* harmony import */ var _header_module_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_header_module_css__WEBPACK_IMPORTED_MODULE_3__);
 var _jsxFileName = "/Users/Kassidy/Desktop/sei/projects/project3_frontend/restaurant-review/components/Header/SearchButton.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
 
+
 function SearchButton(props) {
+  const router = Object(next_router__WEBPACK_IMPORTED_MODULE_2__["useRouter"])();
+
   function handleClick() {
-    console.log('click ', props);
+    console.log('click ', props.keywords, 'click ', props.location);
   }
 
   return __jsx("div", {
     id: "search",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
+      lineNumber: 15
     },
     __self: this
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "/Search",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14
+      lineNumber: 17
     },
     __self: this
   }, __jsx("button", {
@@ -197,7 +212,7 @@ function SearchButton(props) {
     type: "search",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14
+      lineNumber: 18
     },
     __self: this
   }, "Search")));
@@ -351,6 +366,36 @@ if (true) {
     update();
   });
 }
+
+/***/ }),
+
+/***/ "./components/footer.js":
+/*!******************************!*\
+  !*** ./components/footer.js ***!
+  \******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var _jsxFileName = "/Users/Kassidy/Desktop/sei/projects/project3_frontend/restaurant-review/components/footer.js";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+function footer(props) {
+  console.log(props);
+  return __jsx("footer", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 6
+    },
+    __self: this
+  }, "FOOTER");
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (footer);
 
 /***/ }),
 
@@ -9038,7 +9083,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
-function HomePage() {
+function index() {
   return __jsx("div", {
     __source: {
       fileName: _jsxFileName,
@@ -9048,13 +9093,13 @@ function HomePage() {
   }, __jsx(_components_Header__WEBPACK_IMPORTED_MODULE_2__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12
+      lineNumber: 11
     },
     __self: this
   }));
 }
 
-/* harmony default export */ __webpack_exports__["default"] = (HomePage);
+/* harmony default export */ __webpack_exports__["default"] = (index);
 
 /***/ }),
 

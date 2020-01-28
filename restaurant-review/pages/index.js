@@ -4,15 +4,13 @@ import Header from '../components/Header'
 
 
 
-function HomePage() {
+function index() {
     return (
 
-      <div>
-        
-    <Header/>
-        
-    </div>
+        <div>
+            <Header />
+        </div>
     )
-  }
-  
-  export default HomePage
+}
+
+export default index
